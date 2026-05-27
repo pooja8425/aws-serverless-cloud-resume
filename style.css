@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    padding: 40px 20px;
+    margin: 0;
+}
+.resume-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+header {
+    text-align: center;
+    border-bottom: 3px solid #ff9900; /* AWS Brand Accent */
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+h1 { color: #232f3e; font-size: 2.4em; margin: 0; }
+.subtitle { color: #555555; font-size: 1.2em; margin-top: 8px; font-weight: 600; }
+.contact-info { color: #777777; font-size: 0.95em; margin-top: 5px; }
+
+h2 { 
+    color: #ff9900; 
+    font-size: 1.4em; 
+    border-bottom: 1px solid #dddddd; 
+    padding-bottom: 6px; 
+    margin-top: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+p { line-height: 1.6; font-size: 1.05em; }
+ul { line-height: 1.6; font-size: 1.05em; padding-left: 20px; }
+li { margin-bottom: 8px; }
+
+.skills-list { list-style-type: square; }
+
+.card {
+    background: #f9fbfd;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #232f3e;
+    border-radius: 0 6px 6px 0;
+}
+.card h3 { margin-top: 0; color: #232f3e; font-size: 1.2em; }
+
+.job-meta {
+    background: #eef2f7;
+    padding: 8px 12px;
+    margin-top: 20px;
+    font-size: 1.05em;
+    border-radius: 4px;
+    color: #232f3e;
+}
+
+.live-demo {
+    background: #fff9f2;
+    padding: 25px;
+    border: 2px dashed #ff9900;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+.live-demo h2 { border: none; margin-top: 0; padding: 0; }
+.demo-text { font-size: 0.95em; color: #555555; margin-bottom: 20px; }
+
+form input {
+    width: 95%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+button {
+    background-color: #ff9900;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+button:hover { background-color: #e08800; }
+#responseMessage { font-weight: bold; margin-top: 15px; font-size: 1.1em; }

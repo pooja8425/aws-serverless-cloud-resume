@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Krishna Kalyankar | AWS Cloud Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Pooja Krishna Kalyankar</h1>
+            <p class="subtitle">AWS Certified Cloud Practitioner | Technical Project Coordinator</p>
+            <p class="contact-info">Mumbai • kalyankarpooja04@gmail.com • +91 8425003987</p>
+        </header>
+
+        <section class="resume-section">
+            <h2>Professional Summary</h2>
+            <p>Detail-oriented and results-driven Technical Project Coordinator and AWS Certified Cloud Practitioner
+                with a strong background in managing IoT, data visualization, and renewable energy infrastructure
+                projects. Proven track record of bridging the gap between client requirements and scalable technical
+                solutions. Adept at leveraging cloud concepts to optimize data workflows, monitor real-time environments
+                and improve operational efficiency. Seeking to leverage strong foundational knowledge of AWS
+                architecture, security, and cloud deployment to transition into a Cloud Practitioner role.</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Core Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Cloud Computing:</strong> AWS Cloud Practitioner (EC2, S3, RDS, IAM, CloudWatch, VPC,
+                    Lambda, API Gateway, DynamoDB)</li>
+                <li><strong>Project Management & Tools:</strong> ClickUp, Trello, JIRA, Vendor & Stakeholder Management
+                </li>
+                <li><strong>Data Analysis & Visualization:</strong> Power BI, SQL, Python, MySQL, Data Infrastructure
+                </li>
+                <li><strong>Technical Documentation:</strong> SOPs, SOWs, Architecture Diagrams, Techno-Commercial
+                    Proposals</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, Figma (UI/UX)</li>
+                <li><strong>Domain Expertise:</strong> Internet of Things (IoT), Renewable Energy Systems (PVsyst, Homer
+                    Pro)</li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Technical Cloud Projects</h2>
+
+            <div class="card">
+                <h3>Project 1: AWS Serverless Infrastructure Cost Optimizer</h3>
+                <p><strong>The Problem:</strong> Companies waste thousands of dollars leaving development and testing
+                    servers running 24/7 over weekends and nights when no one is working.</p>
+                <p><strong>The Solution:</strong> An event-driven, automated system that shuts down non-essential
+                    development servers at night and turns them back on in the morning.</p>
+                <p><strong>The Tech Stack:</strong> Amazon EventBridge triggers an AWS Lambda function running Python
+                    (Boto3) twice a day. The function uses strict AWS IAM permissions to safely identify and toggle
+                    Amazon EC2 instances based on specific resource tags (Environment: Development), completely
+                    bypassing live production servers.</p>
+                <p><strong>The Impact:</strong> Cuts idle cloud infrastructure compute costs by up to 65% while
+                    maintaining a $0 operating footprint by running entirely within the AWS Free Tier.</p>
+            </div>
+
+            <div class="card">
+                <h3>Project 2: Serverless Student Enrollment Backend (API & Database)</h3>
+                <p><strong>The Problem:</strong> Traditional database servers must run 24/7 to wait for users to submit
+                    forms or data, which wastes money when the app is idle and crashes if too many users visit at once.
+                </p>
+                <p><strong>The Solution:</strong> A modern backend application that instantly processes data, saves it
+                    to a database, scales up automatically for thousands of users, and costs $0 when not in use.</p>
+                <p><strong>The Tech Stack:</strong> Amazon API Gateway acts as the secure front door to accept data from
+                    a web form. It forwards the data to an AWS Lambda (Python) function, which processes the information
+                    and stores it safely inside an Amazon DynamoDB NoSQL database table.</p>
+                <p><strong>The Impact:</strong> Eliminates the need to manage virtual servers, ensuring 100% uptime and
+                    automatic scaling while operating completely within the AWS Free Tier.</p>
+            </div>
+
+            <div class="card">
+                <h3>Project 3: Cloud-Native Portfolio & Interactive Resume Platform</h3>
+
+                <p><strong>The Problem:</strong> Standard PDF resumes are static and fail to demonstrate hands-on cloud
+                    engineering competency, global caching implementation, or strict security configuration.</p>
+
+                <p><strong>The Solution:</strong> A serverless, globally optimized interactive web application that
+                    serves as production-ready proof of core routing, edge-caching, and event-driven data integration.
+                </p>
+
+                <p><strong>The Tech Stack:</strong> Frontend assets (`index.html`, `style.css`) are hosted as static
+                    objects in an <strong>Amazon S3</strong> bucket. <strong>Amazon CloudFront (CDN)</strong> handles
+                    global edge caching for low-latency delivery, secured with default SSL/TLS transport-layer
+                    certificates. The integrated contact form dynamically invokes an <strong>Amazon API Gateway</strong>
+                    REST pipeline, triggering an <strong>AWS Lambda</strong> (Node.js backend compute) function to
+                    securely handle validation and store user records in an <strong>Amazon DynamoDB</strong> NoSQL
+                    table.</p>
+
+                <p><strong>The Impact:</strong> Showcases end-to-end cloud infrastructure proficiency. Successfully
+                    engineered cross-origin traffic policies by navigating strict browser-level <strong>CORS
+                        policies</strong> and handling complex <code>OPTIONS</code> preflight validations directly at
+                    the API Gateway routing layer.</p>
+
+                <div class="project-links" style="margin-top: 15px;">
+                    <a href="https://github.com/pooja8425/aws-serverless-cloud-resume" target="_blank"
+                        style="color: #ff9900; font-weight: bold; text-decoration: none; margin-right: 15px;">🔗 View
+                        GitHub Code</a>
+                    <a href="https://d2xlaaem5zfncp.cloudfront.net" target="_blank"
+                        style="color: #ff9900; font-weight: bold; text-decoration: none;">🌐 Live Deployment Link</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="live-demo">
+            <h2>Live Pipeline Demo: Cloud Database Enrollment</h2>
+            <p class="demo-text">Submit your profile below to test my live serverless infrastructure. The payload routes
+                through API Gateway and Lambda straight into an active DynamoDB NoSQL table!</p>
+            <form id="enrollmentForm">
+                <input type="text" id="studentName" placeholder="Full Name" required><br>
+                <input type="email" id="studentEmail" placeholder="Email Address" required><br>
+                <input type="text" id="studentCourse" placeholder="Course Name" required><br>
+                <button type="button" onclick="submitData()">Test AWS Database Pipeline</button>
+            </form>
+            <p id="responseMessage"></p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Work Experience</h2>
+
+            <div class="job-meta">
+                <strong>Technical Project Coordinator</strong> | Yunometa Pte. Ltd. | 2023 – 2025
+            </div>
+            <ul>
+                <li><strong>IoT & Infrastructure Management:</strong> Led end-to-end IoT deployment projects,
+                    successfully translating complex client requirements into scalable technical architectures.</li>
+                <li><strong>Data Pipeline & Analytics:</strong> Managed data gathering, cleaning, and Power BI
+                    visualizations for device metrics; engineered real-time monitoring and predictive maintenance
+                    systems that significantly reduced system downtime.</li>
+                <li><strong>Cross-Functional Leadership:</strong> Coordinated cross-functional engineering teams,
+                    managed hardware vendor relations, and defined project scopes, SOWs, and KPIs to ensure timely
+                    delivery.</li>
+                <li><strong>Agile Coordination:</strong> Facilitated stakeholder alignment meetings, tracked project
+                    milestones using Agile methodologies, and maintained comprehensive technical documentation.</li>
+                <li><strong>UI/UX Collaboration:</strong> Designed application layouts in Figma and assisted the
+                    engineering team with front-end components to improve end-user interaction.</li>
+            </ul>
+
+            <div class="job-meta">
+                <strong>Research Analyst</strong> | Lester Infoservices Pvt. Ltd. | 2022 – 2023
+            </div>
+            <ul>
+                <li>Optimized company profiles and technical platform content to significantly enhance web
+                    discoverability and audience engagement.</li>
+                <li>Implemented SEO best practices and data-driven content strategies to maximize website traffic and
+                    ensure consistent quality standards under tight timelines.</li>
+            </ul>
+
+            <div class="job-meta">
+                <strong>Junior Project Engineer – Renewable Projects</strong> | TULS Corp. Pvt. Ltd. | 2021 – 2022
+            </div>
+            <ul>
+                <li>Developed comprehensive technical documentation and techno-commercial proposals for Floating Solar,
+                    Hybrid Solar-Wind, and Green Hydrogen ensuring strict compliance with industry standards and safety
+                    regulations.</li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Education</h2>
+            <p><strong>Bachelor Of Electrical Engineering</strong><br>
+                Atharva College of Engineering, Mumbai | CGPA: 8.83 | June 2021</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Certified Cloud Practitioner (CLF-C02) – Amazon Web Services</li>
+                <li>Figma UI/UX Design Essentials – Udemy</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        async function submitData() {
+            // ⚠️ REPLACE THIS LINK WITH YOUR ACTUAL API GATEWAY INVOKE URL
+            const url = 'https://yrbj0cga19.execute-api.ap-south-1.amazonaws.com/enroll';
+
+            const payload = {
+                student_name: document.getElementById('studentName').value,
+                email: document.getElementById('studentEmail').value,
+                course: document.getElementById('studentCourse').value
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    document.getElementById('responseMessage').style.color = "green";
+                    document.getElementById('responseMessage').innerText = "✓ " + result.message + " Partition Key ID Created: " + result.student_id;
+                } else {
+                    document.getElementById('responseMessage').style.color = "red";
+                    document.getElementById('responseMessage').innerText = "Validation Error: Missing parameters.";
+                }
+            } catch (error) {
+                document.getElementById('responseMessage').style.color = "red";
+                document.getElementById('responseMessage').innerText = "API Endpoint Execution Error.";
+            }
+        }
+    </script>
+</body>
+
+</html>
